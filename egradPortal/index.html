@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .login-form {
+            max-width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0px 0px 10px 0px #ccc;
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .login-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .nav {
+            display: flex;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        .nav a {
+            flex: 1;
+            padding: 14px 20px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #575757;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px #ccc;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Online Portal</h1>
+    </div>
+    <div class="login-form">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="container">
+        <div class="nav">
+            <a href="#dashboard">Dashboard</a>
+            <a href="#courses">Course Registration</a>
+            <a href="#records">Academic Records</a>
+            <a href="#financial-aid">Financial Aid</a>
+        </div>
+
+        <div class="content" id="dashboard">
+            <h2>Welcome, [Student Name]</h2>
+            <p>This is your Online Portal Dashboard. Here you can access various student services and information.</p>
+        </div>
+
+        <div class="content" id="courses">
+            <h2>Course Registration</h2>
+            <p>Register for your upcoming courses.</p>
+        </div>
+
+        <div class="content" id="records">
+            <h2>Academic Records</h2>
+            <p>View your transcripts and academic history.</p>
+        </div>
+
+        <div class="content" id="financial-aid">
+            <h2>Financial Aid</h2>
+            <p>Check your financial aid status and pay tuition.</p>
+        </div>
+    </div>
+
+</body>
+</html>
